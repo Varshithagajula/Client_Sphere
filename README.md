@@ -18,16 +18,16 @@ Client_Sphere is designed as a **modern, scalable frontend app** with the follow
 
 ## 🧰 Technologies Used
 
-| Feature             | Technology                   |               |
-| ------------------- | ---------------------------- | ------------- |
-| Frontend Framework  | React                        |               |
-| Build Tool          | Vite                         |               |
-| Language            | TypeScript                   |               |
-| Styling             | Tailwind CSS                 |               |
-| Backend / Auth / DB | Supabase                     |               |
-| Package Manager     | npm / bun.lockb present      |               |
-| Optional Configs    | ESLint, Vitest (for testing) |               |
-| Version Control     | Git (hosted on GitHub)       | ([GitHub][1]) |
+| Feature             | Technology                   |               
+| ------------------- | ---------------------------- | 
+| Frontend Framework  | React                        |              
+| Build Tool          | Vite                         |              
+| Language            | TypeScript                   |               
+| Styling             | Tailwind CSS                 |               
+| Backend / Auth / DB | Supabase                     |              
+| Package Manager     | npm / bun.lockb present      |               
+| Optional Configs    | ESLint, Vitest (for testing) |               
+| Version Control     | Git (hosted on GitHub)       | 
 
 ---
 
@@ -70,7 +70,7 @@ VITE_SUPABASE_URL=your-supabase-url
 VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
 ```
 
-> Replace `your-supabase-url` and `your-supabase-anon-key` with your own Supabase project credentials. ([GitHub][1])
+> Replace `your-supabase-url` and `your-supabase-anon-key` with your own Supabase project credentials. 
 
 ### 4. **Start Dev Server**
 
@@ -84,7 +84,7 @@ Open your browser at:
 http://localhost:5173
 ```
 
-You should see the app running with live reload. ([GitHub][1])
+You should see the app running with live reload. 
 
 ---
 
@@ -112,7 +112,7 @@ This project includes a `vitest.config.ts` — meaning tests can be run with:
 npm test
 ```
 
-Ensure test files exist in your `src/` directory. ([GitHub][1])
+Ensure test files exist in your `src/` directory.
 
 ---
 
