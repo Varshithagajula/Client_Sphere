@@ -1,73 +1,138 @@
-# Welcome to your Lovable project
+# 📌 Client_Sphere
 
-## Project info
+**Client_Sphere** is a frontend application built with **React + Vite + TypeScript**, featuring Tailwind CSS for styling and Supabase as the backend/auth/data layer. This project likely serves as the client interface of a larger web app (e.g., user dashboard, CRM, or product platform). 
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 🧠 Approach
 
-There are several ways of editing your application.
+Client_Sphere is designed as a **modern, scalable frontend app** with the following goals:
 
-**Use Lovable**
+1. **Fast local development** using **Vite** for rapid Hot Module Reloading (HMR).
+2. **Type safety** with **TypeScript** to minimize runtime bugs.
+3. **Responsive UI** with **Tailwind CSS** for utility-first styling.
+4. **Backend integration** via **Supabase** to handle authentication and real-time data.
+5. A clean and modular file structure (`public/`, `src/`, `supabase/`, config files) for future feature growth.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🧰 Technologies Used
 
-**Use your preferred IDE**
+| Feature             | Technology                   |               |
+| ------------------- | ---------------------------- | ------------- |
+| Frontend Framework  | React                        |               |
+| Build Tool          | Vite                         |               |
+| Language            | TypeScript                   |               |
+| Styling             | Tailwind CSS                 |               |
+| Backend / Auth / DB | Supabase                     |               |
+| Package Manager     | npm / bun.lockb present      |               |
+| Optional Configs    | ESLint, Vitest (for testing) |               |
+| Version Control     | Git (hosted on GitHub)       | ([GitHub][1]) |
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🚀 How to Run the Project Locally
 
-Follow these steps:
+### 1. **Clone the Repo**
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+git clone https://github.com/Varshithagajula/Client_Sphere.git
+cd Client_Sphere
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 2. **Install Dependencies**
 
-# Step 3: Install the necessary dependencies.
-npm i
+Depending on your toolchain:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+**Using npm**
+
+```bash
+npm install
+```
+
+**If using bun**
+
+````bash
+bun install
+``` :contentReference[oaicite:4]{index=4}
+
+### 3. **Configure Environment**
+
+Create a `.env` file based on Supabase requirements:
+```bash
+cp .env.example .env
+````
+
+Then set values for keys like (example):
+
+```
+VITE_SUPABASE_URL=your-supabase-url
+VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
+```
+
+> Replace `your-supabase-url` and `your-supabase-anon-key` with your own Supabase project credentials. ([GitHub][1])
+
+### 4. **Start Dev Server**
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open your browser at:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+http://localhost:5173
+```
 
-**Use GitHub Codespaces**
+You should see the app running with live reload. ([GitHub][1])
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 📦 (Optional) Build for Production
 
-This project is built with:
+To generate a production build:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```bash
+npm run build
+```
 
-## How can I deploy this project?
+To preview production build locally:
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+```bash
+npm run preview
+```
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 🧪 Testing (if configured)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+This project includes a `vitest.config.ts` — meaning tests can be run with:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```bash
+npm test
+```
+
+Ensure test files exist in your `src/` directory. ([GitHub][1])
+
+---
+
+## 🧩 Repository Structure
+
+```
+Client_Sphere/
+├── public/
+├── src/
+├── supabase/
+├── .env
+├── package.json
+├── vite.config.ts
+├── tailwind.config.ts
+└── README.md
+```
+
+* **public/** — Static assets
+* **src/** — React app source
+* **supabase/** — Supabase client and configs
+* **.env** — Environment variables
+* **config files** — for Tailwind, ESLint, Vite, etc. 
+
